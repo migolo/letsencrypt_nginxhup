@@ -5,6 +5,7 @@ ENV NGINXHUP_URL https://github.com/migolo/dockernginxhup/releases/download/v1.1
 RUN curl -O $NGINXHUP_URL && \
     mv dockernginxhup_alpine /usr/local/bin/dockernginxhup && \
     chmod +x /usr/local/bin/dockernginxhup
+RUN touch /var/log/cron.log
 VOLUME /var/acmechallenge
 ENTRYPOINT []
 CMD ["certbot"]
