@@ -1,4 +1,4 @@
-FROM certbot/certbot:v0.16.0
+FROM certbot/certbot:v0.27.1
 MAINTAINER Miguel Gonzalez (migolo10@gmail.com)
 RUN apk add --no-cache openssh-client bash curl
 ENV NGINXHUP_URL https://github.com/migolo/dockernginxhup/releases/download/v1.1.0/dockernginxhup_alpine
